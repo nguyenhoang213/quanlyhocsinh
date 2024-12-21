@@ -1,0 +1,74 @@
+#content {
+    padding-top: 50px;
+    background: linear-gradient(rgba(72, 146, 251, 0.6), rgba(9, 112, 255, 0.6)), 
+    url(../image/bg.png), no-repeat center center;
+    background-size: contain;
+}
+
+#content .login{
+    position: relative;
+    text-align: left;
+    border: solid;
+    width: 40vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 20px 0 80px 0;
+    margin-bottom: 120px;
+    background-color: white;
+}
+
+#content .login h1{
+    margin-top: 5px;
+    text-align: left;
+    margin: 0 50px 20px;
+}
+
+#content .login .text-input{
+    height: 40px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    width: 30vw;
+    left: 0;
+    font-size: 14px;
+    border-color: #000;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid;
+    margin: 0 50px 20px 50px;
+}
+
+
+
+#content .login input:focus-visible {
+    outline: none;
+}
+
+#content .login .checkbox{
+    margin: 0 10px 20px 50px;
+}
+
+#content .button-list {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#content .login .button-list button{
+    margin: 0;
+    width: 50%;
+    float: left;
+    height: 60px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    #content{
+        background: none;
+    }
+    #content .login{
+        width:95vw;
+    }
+    #content .login .text-input{
+        width:60vw;
+    }
+}

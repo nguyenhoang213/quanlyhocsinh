@@ -1,0 +1,174 @@
+/* header css */
+#header {
+    position: fixed;
+    background-color: black;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+#header .contact_phone{
+    color: white;
+    margin-left: 30px;
+}
+
+#header .contact_phone p{
+    line-height: 5vh;
+    display: inline;
+    margin: 0 5px;
+}
+
+#header .network_contact{
+    margin-right: 15px;
+}
+
+#header .network_contact a{
+    line-height: 5vh;
+    display: inline;
+    margin: 0 5px;
+}
+
+/* slider css */
+#slider{
+    position: relative;
+    padding-top: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#slider .logo{
+    display: flex;
+    margin: 15px 0px 15px 15px;
+}
+
+#slider .logo img { 
+    width: 80px;
+    height: 80px;
+}
+
+#slider .logo h1{
+    color: rgb(5, 109, 255);
+    font-size: 36px;
+    line-height: 22px;
+}
+
+#slider .menu {
+    padding-top: 5vh;
+    margin-right: 5px;
+}
+
+#slider .menu_button{
+    display: none;
+}
+
+#slider .menu a{
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 5px 15px;;
+    border-left: none;
+    box-shadow: 2px 0 0 0 black;
+}
+
+#slider .menu a:first-child {
+    color: rgb(5, 109, 255); 
+    border-left: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #header .contact_phone{
+        color: white;
+        margin-left: 5px;
+    }
+    
+    #header .contact_phone p{
+        line-height: 5vh;
+        display: inline;
+    }
+
+    #header .network_contact{
+        margin-right: 0px;
+    }
+
+    #header .network_contact a{
+        line-height: 5vh;
+        display: inline;
+    }
+
+    #header {
+        font-size: 12px;
+    }
+
+    #slider {
+        display: block;
+    }
+
+    #slider .menu{
+        margin: 0;
+        display: block;
+    }
+
+    #slider .logo{
+        display: flex;
+        margin: 15px 0 15px 10px;
+    }    
+
+    #slider .logo img { 
+        width: 50px;
+        height: 50px;
+    }
+
+    #slider .logo h1{
+        margin-left: 5px;
+        font-size: 22px;
+    }
+
+    #slider .menu_button{
+        display: block;
+        color: rgba(0, 0, 0, 0.5);
+        background-color: transparent;
+        font-size: 20px;
+        border: 1px solid transparent;
+        border-color: rgba(0, 0, 0, 0.1);
+        margin-right: 5px;
+        padding: 7px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    
+    #slider .icon{
+        display: block;
+        color: black;
+        font-size: 20px;
+    }
+    #slider .menu{
+        position: absolute;
+        padding: 0;
+        display: none;
+        z-index: 10;
+        background-color: rgb(255, 255, 255);
+        margin-top: -40px;
+        right: 0;
+    }
+
+    #slider .menu a{
+        display: block;
+        margin: 10px 0;
+        font-size: 18px;
+        border-left: 1px solid;
+    }
+
+    #slider .menu a:first-child {
+        color: rgb(5, 109, 255); 
+        border-left: 1px solid;
+    }
+}
+
+.show{
+    display: block;
+}
